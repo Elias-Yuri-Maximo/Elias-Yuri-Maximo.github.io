@@ -2,6 +2,7 @@
 @use 'atoms';  // assumes file is named _atoms.scss
 @use 'molecules';
 @use 'organisms';  // can shorten the name if we like :)
+@use 'small';
 @use 'medium';  
 @use 'large';  
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
