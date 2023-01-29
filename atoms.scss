@@ -7,34 +7,34 @@
 }
 
 h1 {
-  @include shape-title(0.67em 0, ("Pattaya", sans-serif));
+  @include shape-title(0.67em 0, ($branch-font-style));
   padding-left: 4%;
-  color: #e63946;
+  color: $red-header-color;
 }
 
 //H2 style
 h2 {
-  @include shape-title(5%, ("Playfair Display", serif));
+  @include shape-title(5%, ($headings-font-style));
 }
 
 //P style
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: $content-font-style;
   margin-top: 20px;
 }
 
 .branch {
-  font-family: "Pattaya", sans-serif;
+  font-family: $branch-font-style;
 }
-h2 {
+@mixin h2($font-family) {
   margin: 5%;
-  font-family: "Playfair Display", serif;
+  font-family: $headings-font-style;
 }
 .headings {
-  font-family: "Playfair Display", serif;
+  @include h2($headings-font-style)
 }
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: $content-font-style;
   margin-top: 20px;
 }
 .contact h1 {
@@ -60,7 +60,7 @@ p {
   margin-top: 20px;
   &:hover {
     transform: scale(1.1);
-    box-shadow: 10px 5px 5px rgb(168, 218, 220, 0.4);
+    box-shadow: $box-shadow-margin;
   }
 }
 
@@ -73,7 +73,7 @@ p {
 .color-scheme img {
   width: 100%;
   max-width: 500px;
-  border-radius: 10px;
+  border-radius: $border-radius-px;
 }
 
 header img {
@@ -102,7 +102,7 @@ header img {
 a {
   color: #14213d;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: $motto-font-style;
 }
 a:hover {
   color: #ff4a1c;
@@ -120,7 +120,7 @@ header {
 }
 
 .motto {
-  font-family: "Open Sans", sans-serif;
+  font-family: $motto-font-style;
   margin-left: 15px;
   font-size: 1rem;
   letter-spacing: 3pt;
@@ -137,7 +137,7 @@ main {
 .article {
   max-width: 800px;
   margin: 10px auto;
-  background-color: rgb(168, 218, 220, 0.4);
+  background-color: $blue-background;
   border-radius: 3px;
   padding: 5%;
 }
@@ -147,7 +147,7 @@ main {
   padding: 5px;
 }
 .hover:hover {
-  background-color: rgb(230, 57, 70, 0.5);
+  background-color: $hover-background-color;
   color: white;
 }
 .hover {

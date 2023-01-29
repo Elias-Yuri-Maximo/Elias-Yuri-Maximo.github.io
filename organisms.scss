@@ -24,7 +24,7 @@ main {
 .footer-info{
     margin-top:10px;
     border-radius: 3px;
-   background-color:#A8DADC;
+   background-color:$footer-background-color;
    color:white;
    display: flex;
    flex-flow: column;
