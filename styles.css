@@ -5,7 +5,7 @@ h1 {
   margin: 0.67em 0;
   font-family: "Pattaya", sans-serif;
   padding-left: 4%;
-  color: #e63946;
+  color: #E63946;
 }
 
 h2 {
@@ -22,12 +22,8 @@ p {
   font-family: "Pattaya", sans-serif;
 }
 
-h2 {
-  margin: 5%;
-  font-family: "Playfair Display", serif;
-}
-
 .headings {
+  margin: 5%;
   font-family: "Playfair Display", serif;
 }
 
