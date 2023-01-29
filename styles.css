@@ -77,7 +77,8 @@ p {
 }
 
 header img {
-  width: 300px;
+  width: 90%;
+  max-width: 800px;
   height: auto;
   transition: 0.5s;
 }
