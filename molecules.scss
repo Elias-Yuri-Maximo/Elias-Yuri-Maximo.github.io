@@ -4,14 +4,14 @@
 
 //Branch class
 .branch{
-    font-family: 'Pattaya', sans-serif;
+    font-family: $branch-font-style;
   }
 
 /*-Articles-*/
 .article{
     max-width:800px;
     margin: 10px auto;
-    background-color: rgb(168,218,220,0.4);
+    background-color: $blue-background;
     border-radius: 3px;
     padding:5%;
   }
@@ -22,14 +22,14 @@
 
 //Hover Class
   .hover:hover{
-    background-color:rgb(230,57,70,0.5);
+    background-color:$hover-background-color;
     color:white;
   }
   .hover{
     padding: 10px;
   }
   .hover a:hover{
-    color:#0EABF3;
+    color:$active-color;
   }
 
   //Contacts
@@ -62,4 +62,3 @@
      overflow:hidden;
     
    }
-   
